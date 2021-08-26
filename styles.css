@@ -9,6 +9,11 @@
 }
 
 /* Navigation */
+
+.nav-box {
+    display: none;
+}
+
 .nav-bugger {
     display: none;
     transition: .5s linear;
@@ -272,10 +277,11 @@ img {
     }
 
     .nav-box {
+        display: block;
         position: fixed;
         top: 0;
         right: 0;
-        width: 70%;
+        width: 35%;
         height: 100vh;
         background-color: #ec2064;
         padding: 20px 30px;
@@ -306,4 +312,20 @@ img {
         padding: 15px 30px;
         font-size: 1.2rem;
     }
+}
+
+
+@media only screen and (max-width: 500px) {
+.nav-box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #ec2064;
+    padding: 20px 30px;
+    transition: .5s linear;
+    transform: translateX(350px);
+}
 }
